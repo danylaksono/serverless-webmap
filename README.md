@@ -7,6 +7,7 @@ Heavily inspired by this [Simon Willison’s TILs](https://github.com/simonw/til
 
 - **PMTiles**: A specification for serving raster tiles from a key-value store.
 - **Maplibre GL JS**: A JavaScript library for interactive, customizable vector maps.
+- **Vite**: A build tool that aims to provide a faster and leaner development experience for modern web projects.
 - **Cloudflare Workers**: A serverless platform for deploying and running code at the edge of the network.
 
 ## Data
@@ -19,6 +20,10 @@ The data is stored in a PMTiles file, which is a single-file format for storing 
 ## Storage
 
 Cloudflare R2 public bucket with limited availability (since it's free).
+
+## Deployment
+
+Deployed as Github pages for demo purposes. Ideally this should be deployed as a Cloudflare Worker.
 
 ---
 
