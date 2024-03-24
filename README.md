@@ -23,7 +23,7 @@ Cloudflare R2 public bucket with limited availability (since it's free).
 
 ## Deployment
 
-Deployed as Github pages for demo purposes. Ideally this should be deployed as a Cloudflare Worker.
+Deployed as Github pages for demo purposes. Github workflow at `main.yml`. Ideally this should be deployed as a Cloudflare Worker.
 
 ---
 
