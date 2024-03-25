@@ -3,7 +3,7 @@ import * as pmtiles from "pmtiles";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 // import layers from "protomaps-themes-base";
-// import style from "./components/style";
+import style from "./components/style";
 
 const protocol = new pmtiles.Protocol();
 maplibregl.addProtocol("pmtiles", protocol.tile);
@@ -11,17 +11,17 @@ maplibregl.addProtocol("pmtiles", protocol.tile);
 // Initialise the map
 const map = new maplibregl.Map({
   container: "map",
-  // style: style,
-  style: "https://tiles.stadiamaps.com/styles/osm_bright.json",
+  style: style,
+  // style: "https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json",
   zoom: 12,
   center: [110.365685, -7.794314],
 });
 
 map.once("load", () => {
-  map.addSource("protomapsRaster", {
-    type: "raster",
-    url: "pmtiles://https://pub-ee5ad887928649d582242a69272f342c.r2.dev/jogja_1925.pmtiles",
-  });
+  // map.addSource("protomapsRaster", { // this is defined in style.js
+  //   type: "raster",
+  //   url: "pmtiles://https://pub-ee5ad887928649d582242a69272f342c.r2.dev/jogja_1925.pmtiles",
+  // });
 
   map.addLayer({
     id: "Jogja1925",
