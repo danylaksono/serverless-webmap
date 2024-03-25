@@ -22,14 +22,14 @@ map.once("load", () => {
   //   type: "raster",
   //   url: "pmtiles://https://pub-ee5ad887928649d582242a69272f342c.r2.dev/jogja_1925.pmtiles",
   // });
-
   map.addLayer({
-    id: "Jogja1925",
+    id: "wmsRaster",
     type: "raster",
-    source: "protomapsRaster",
+    source: "wmsRaster",
     opacity: 0.65,
+    paint: {},
     minzoom: 0,
-    maxzoom: 20,
+    maxzoom: 15,
   });
 });
 
